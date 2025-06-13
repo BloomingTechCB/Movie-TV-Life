@@ -42,3 +42,18 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.fancy-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+
+  /* Cyberpunk Gradient Text */
+  background: linear-gradient(90deg, #ff00cc, #9900ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Glow Effect */
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #9900ff;
+}
