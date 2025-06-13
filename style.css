@@ -61,11 +61,6 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 img {
   border-radius: 6px;
   max-width: 100%;
