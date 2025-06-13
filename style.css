@@ -1,62 +1,73 @@
 body {
-  background-color: #0a0014;
-  color: #f0f0f0;
-  font-family: 'Cabinet Grotesk', sans-serif;
-  padding: 20px;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  padding: 30px;
+  line-height: 1.6;
 }
 
 h1 {
-  color: #a100ff;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #e5c07b;
   text-align: center;
-  font-size: 2.5em;
   margin-bottom: 40px;
 }
 
 h2 {
-  color: #d067f0;
-  border-bottom: 2px solid #a100ff;
-  padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #e5c07b;
+  border-bottom: 2px solid #e5c07b;
+  padding-bottom: 10px;
+  margin-top: 40px;
 }
 
-section {
-  margin-bottom: 40px;
-  background-color: #150022;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #a100ff50;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2b2b2b;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+th {
+  background-color: #3a3a3a;
+  color: #f5c16c;
+}
+
+a {
+  color: #f5c16c;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+table tbody tr:hover {
+  background-color: #353535;
+  transition: background-color 0.3s ease;
 }
 
 img {
-  display: block;
+  border-radius: 6px;
+  max-width: 100%;
   margin-top: 10px;
-  margin-bottom: 15px;
-  border-radius: 8px;
 }
-
 a {
   color: #ff007c;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-.fancy-heading {
-  font-size: 4rem;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 3px;
-  margin-bottom: 60px;
-
-  /* Cyberpunk Gradient Text */
-  background: linear-gradient(90deg, #ff00cc, #9900ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* Glow Effect */
-  text-shadow: 0 0 10px #ff00cc, 0 0 20px #9900ff;
-}
 table {
   width: 100%;
   border-collapse: collapse;
