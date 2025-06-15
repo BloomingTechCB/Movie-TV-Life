@@ -1,16 +1,17 @@
 body {
-  background-image: var(--bg-texture);
-  background-size: auto;
+  background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   padding: 30px;
   line-height: 1.6;
   margin: 0;
+  background-image: var(--bg-texture);
   background-repeat: repeat;
+  background-size: 300px;
+  background-blend-mode: overlay;
 }
 
 :root {
-  /* Dark Mode */
   --bg: #1c1c1c;
   --text: #e0e0e0;
   --accent: #b8a1c4;
@@ -21,13 +22,12 @@ body {
   --hover-bg: #2a2a2a;
   --footer: #999;
   --border: #333;
-  --bg-texture: url('DarkTexture.jpg');
+  --bg-texture: url('https://www.transparenttextures.com/patterns/escheresque-dark.png');
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
 }
 
 body.light-mode {
-  /* Light Mode */
   --bg: #fdfdfb;
   --text: #5a5a5a;
   --accent: #b6b6b6;
@@ -38,7 +38,7 @@ body.light-mode {
   --hover-bg: #f0f0f0;
   --footer: #666;
   --border: #ccc;
-  --bg-texture: url('https://www.transparenttextures.com/patterns/white-wall.png');
+  --bg-texture: url('https://www.transparenttextures.com/patterns/circles.png');
   --font-body: 'Cormorant Garamond', serif;
   --font-heading: 'Playfair Display', serif;
 }
