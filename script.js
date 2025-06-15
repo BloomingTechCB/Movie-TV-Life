@@ -1,1 +1,8 @@
-console.log("Welcome to my Movie & TV site!");
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.querySelector('.toggle-theme');
+  if (button) {
+    button.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  }
+});
