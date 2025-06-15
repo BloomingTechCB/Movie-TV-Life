@@ -38,7 +38,7 @@ body.light-mode {
   --hover-bg: #f0f0f0;
   --footer: #666;
   --border: #ccc;
-  --bg-texture: url('https://www.transparenttextures.com/patterns/circles.png');
+  --bg-texture: url('https://www.transparenttextures.com/patterns/white-tile.png');
   --font-body: 'Cormorant Garamond', serif;
   --font-heading: 'Playfair Display', serif;
 }
