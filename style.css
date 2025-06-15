@@ -1,39 +1,44 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   padding: 30px;
   line-height: 1.6;
   margin: 0;
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-image: var(--bg-texture);
   background-repeat: repeat;
 }
 
 :root {
-  --bg: #1e1e1e;
-  --text: #f5f5f5;
-  --accent: #e5c07b;
-  --link: #f5c16c;
+  --bg: #121212;
+  --text: #f5f0dc;
+  --accent: #d4af37;
+  --link: #d4af37;
   --hover: #ffffff;
-  --table-bg: #2b2b2b;
-  --th-bg: #3a3a3a;
-  --hover-bg: #353535;
-  --footer: #888;
-  --border: #444;
+  --table-bg: #1e1e1e;
+  --th-bg: #2b2b2b;
+  --hover-bg: #2a2a2a;
+  --footer: #999;
+  --border: #333;
+  --bg-texture: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
 }
 
 body.light-mode {
-  --bg: #fefefe;
-  --text: #1e1e1e;
-  --accent: #3a3a3a;
-  --link: #8b5e3c;
+  --bg: #fdfdfb;
+  --text: #5a5a5a;
+  --accent: #b6b6b6;
+  --link: #8c8c8c;
   --hover: #000000;
   --table-bg: #ffffff;
-  --th-bg: #f3e9dc;
+  --th-bg: #f3f3f3;
   --hover-bg: #f0f0f0;
   --footer: #666;
   --border: #ccc;
-  background-image: none;
+  --bg-texture: none;
+  --font-body: 'Cormorant Garamond', serif;
+  --font-heading: 'Playfair Display', serif;
 }
 
 .toggle-theme {
@@ -55,7 +60,7 @@ body.light-mode {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 3rem;
   color: var(--accent);
   text-align: center;
@@ -70,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
@@ -121,7 +126,7 @@ th, td {
 th {
   background-color: var(--th-bg);
   color: var(--accent);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading);
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
