@@ -22,7 +22,7 @@ body {
   --hover-bg: #2a2a2a;
   --footer: #999;
   --border: #333;
-  --bg-texture: url('https://www.transparenttextures.com/patterns/black-paper.png');
+  --bg-texture: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Playfair Display', serif;
 }
@@ -38,7 +38,7 @@ body.light-mode {
   --hover-bg: #f0f0f0;
   --footer: #666;
   --border: #ccc;
-  --bg-texture: url('https://www.transparenttextures.com/patterns/grey-floral.png');
+  --bg-texture: url('https://www.transparenttextures.com/patterns/cream-pixels.png');
   --font-body: 'Cormorant Garamond', serif;
   --font-heading: 'Playfair Display', serif;
 }
