@@ -2,6 +2,38 @@ console.log("Theme toggle script loaded.");
 
 // Apply saved theme on page load
 document.addEventListener('DOMContentLoaded', () => {
+  // Back to Top Button
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+  // Hide loader when page is ready
+const loader = document.getElementById('loader-wrapper');
+if (loader) {
+  setTimeout(() => loader.style.opacity = '0', 300);
+  setTimeout(() => loader.style.display = 'none', 800);
+}
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
