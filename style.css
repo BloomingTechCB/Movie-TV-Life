@@ -1,11 +1,11 @@
 body {
-  background-color: var(--bg);
+  background-image: var(--bg-texture);
+  background-size: auto;
   color: var(--text);
   font-family: var(--font-body);
   padding: 30px;
   line-height: 1.6;
   margin: 0;
-  background-image: var(--bg-texture);
   background-repeat: repeat;
 }
 
