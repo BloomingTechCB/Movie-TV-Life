@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (button) {
     button.addEventListener('click', () => {
       document.body.classList.toggle('light-mode');
+      console.log("Theme toggled!");
     });
+  } else {
+    console.log("Toggle button not found.");
   }
 });
