@@ -1,4 +1,4 @@
-onsole.log("Theme toggle script loaded.");
+console.log("Theme toggle script loaded.");
 
 // Toggle Light/Dark Mode
 document.addEventListener('DOMContentLoaded', () => {
