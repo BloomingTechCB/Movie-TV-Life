@@ -6,7 +6,29 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
   }
+const filterButtons = document.querySelectorAll('.filter-btn');
+  const sections = document.querySelectorAll('section.content-section');
 
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+
+      // Highlight active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Show/Hide sections
+      sections.forEach(section => {
+        const id = section.getAttribute('id');
+        if (category === 'all' || id === category) {
+          section.style.display = 'block';
+          section.classList.add('appear');
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
   // Theme toggle button
   const button = document.querySelector('.toggle-theme');
   if (button) {
