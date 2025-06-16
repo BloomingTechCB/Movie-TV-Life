@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (savedTheme === 'light') {
     document.body.classList.add('light-mode');
   }
-const filterButtons = document.querySelectorAll('.filter-btn');
+
+  // CATEGORY FILTERS
+  const filterButtons = document.querySelectorAll('.filter-btn');
   const sections = document.querySelectorAll('section.content-section');
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      const category = button.getAttribute('data-category');
+      const category = button.getAttribute('data-category').toLowerCase();
 
       // Highlight active button
       filterButtons.forEach(btn => btn.classList.remove('active'));
@@ -19,7 +21,7 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 
       // Show/Hide sections
       sections.forEach(section => {
-        const id = section.getAttribute('id');
+        const id = section.getAttribute('id').toLowerCase();
         if (category === 'all' || id === category) {
           section.style.display = 'block';
           section.classList.add('appear');
@@ -29,13 +31,12 @@ const filterButtons = document.querySelectorAll('.filter-btn');
       });
     });
   });
+
   // Theme toggle button
   const button = document.querySelector('.toggle-theme');
   if (button) {
     button.addEventListener('click', () => {
       document.body.classList.toggle('light-mode');
-
-      // Save preference
       const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
       localStorage.setItem('theme', theme);
       console.log("Theme toggled!");
