@@ -88,7 +88,28 @@ h2 {
 .content-section {
   margin-bottom: 60px;
 }
+.category-filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+.filter-btn {
+  margin: 5px 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: 1px solid var(--link);
+  background: transparent;
+  color: var(--link);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--link);
+  color: var(--bg);
+}
 nav {
   text-align: center;
   margin-bottom: 40px;
